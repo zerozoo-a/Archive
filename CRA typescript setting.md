@@ -7,7 +7,7 @@ yarn create react-app my-app --template=typescript
 yarn add -D husky lint-staged prettier
 
 ---
-root/prettierrc.js
+- root/prettierrc.js
 
 ```js
 module.exports={
@@ -20,7 +20,7 @@ module.exports={
 
 ---
 
-package.json
+- package.json
 ```js
 "scripts":{
 ...
@@ -38,3 +38,15 @@ package.json
   ...
   
   ```
+  
+- tsconfig.json
+```json
+{
+"compilerOptions":{
+	...
+	"jsx":"react-jsx",
+	"baseUrl":"src"
+	},
+	...
+}
+```
